@@ -9,14 +9,14 @@
 Deep Deterministic Policy Gradient ([DDPG](https://arxiv.org/pdf/1509.02971.pdf)) is adapted to work with two agents. Since each agent receives its own, local observation, the code from DRLND Project 2 (Continuous Control) was easily adapted to train both agents through self-play. Each agent has its own actor network (both have the same architecture) and they share critic network. Also both agents are adding and sampling from the same shared replay buffer.
 
 ### Model Architecture
-This is the architecture of the **Actor Network** :
+This is the architecture of the **Actor Networks** :
 <p align="center">
-<img src="https://github.com/brinij/p2_continuous-control/blob/master/ActorNetwork.png" width="600">
+<img src="https://github.com/brinij/p3_collab-compet/blob/master/maddpg_actor.png" width="600">
 </p>
 
 This is the architecture of the **Critic Network** :
 <p align="center">
-<img src="https://github.com/brinij/p2_continuous-control/blob/master/CriticNetwork.png" width="600">
+<img src="https://github.com/brinij/p3_collab-compet/blob/master/maddpg_critic.png" width="600">
 </p>
 
 
