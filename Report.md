@@ -56,7 +56,7 @@ Episode 600	Average Score: 0.48140	Score: 0.70000
 And here is gif of the agent performing in the environment after training:
 
 <p align="center">
-<img src="https://github.com/brinij/p2_continuous-control/blob/master/reacher_trained_solution.gif" width="600">
+<img src="https://github.com/brinij/p3_collab-compet/blob/master/tennis_trained.gif" width="600">
 </p>
 
 ## Improvements
