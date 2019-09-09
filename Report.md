@@ -39,7 +39,7 @@ Parameters that showed the best results are:
 The Environment has been solved in 208 learning episodes where each of them lasted until done is returned from the environment. The environment is considered solved when in the last 100 episodes average reward is 0.5. The graph of rewards during the learning period is shown in the image below:
 
 <p align="center">
-<img src="https://github.com/brinij/p2_continuous-control/blob/master/p2_rewards.png" width="400">
+<img src="https://github.com/brinij/p3_collab-compet/blob/master/maddpg_scores.png" width="400">
 </p>
 
 ```python
@@ -50,7 +50,7 @@ Episode 308	Average Score: 0.50340	Score: 2.50000
 Environment solved in 208 episodes!	Average Score: 0.50
 Episode 400	Average Score: 0.56660	Score: 0.60000
 Episode 500	Average Score: 0.50190	Score: 0.40000
-Episode 571	Average Score: 0.46390	Score: 1.10000
+Episode 600	Average Score: 0.48140	Score: 0.70000
 ```
 
 And here is gif of the agent performing in the environment after training:
