@@ -1,7 +1,5 @@
 [//]: # (Image References)
 
-[image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
-
 # Project 3: Collaboration and Competition
 
 ### Learning Algorithm : DDPG
@@ -23,8 +21,8 @@ This is the architecture of the **Critic Network** :
 ### Implementation Details
 
 In the project file there are two Python files defining five classes. 
-- In `model.py` are Python classes `Actor` and `Critic` who define the structures of Neural Networks used in this project for solving the Reacher environment. Model architecure is shown above.
-- In `dqn_agent.py` are three Python classes: `ReplayBuffer` which implements the functionality of adding samples to a buffer and sampling from it,`OUNoise` which implements noise adding important for exploration, and `Agent` with methods `step` and `act` so that Agent can interact with the environment and add the experience to the memory, and method `learn` which is called every 5. step taken. 
+- In `model.py` are Python classes `Actor` and `Critic` who define the structures of Neural Networks used in this project for solving the Tennis environment. Model architecure is shown above.
+- In `maddpg_agent.py` are three Python classes: `ReplayBuffer` which implements the functionality of adding samples to a buffer and sampling from it,`OUNoise` which implements noise adding important for exploration, and `Agent` with methods `step` and `act` so that Agent can interact with the environment and add the experience to the memory, and method `learn`.
 
 ### Hyperparameters
 Parameters that showed the best results are:
@@ -45,14 +43,14 @@ The Environment has been solved in 208 learning episodes where each of them last
 </p>
 
 ```python
-Episode 100	Average Score: 1.30	Score: 1.76
-Episode 200	Average Score: 7.07	Score: 12.98
-Episode 300	Average Score: 17.27	Score: 28.50
-Episode 400	Average Score: 25.34	Score: 13.10
-Episode 469	Average Score: 30.04	Score: 23.75
-Environment solved in 369 episodes!	Average Score: 30.04
-Episode 500	Average Score: 31.14	Score: 27.01
-Episode 600	Average Score: 31.96	Score: 34.27
+Episode 100	Average Score: 0.04860	Score: 0.00000
+Episode 200	Average Score: 0.11550	Score: 0.20000
+Episode 300	Average Score: 0.44630	Score: 0.00000
+Episode 308	Average Score: 0.50340	Score: 2.50000
+Environment solved in 208 episodes!	Average Score: 0.50
+Episode 400	Average Score: 0.56660	Score: 0.60000
+Episode 500	Average Score: 0.50190	Score: 0.40000
+Episode 571	Average Score: 0.46390	Score: 1.10000
 ```
 
 And here is gif of the agent performing in the environment after training:
