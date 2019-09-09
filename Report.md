@@ -6,7 +6,7 @@
 
 ### Learning Algorithm : DDPG
 
-Deep Deterministic Policy Gradient ([DDPG](https://arxiv.org/pdf/1509.02971.pdf)) is adapted to work with two agents. Since each agent receives its own, local observation, the code from DRLND Project 2 (Continuous Control) was easily adapted to train both agents through self-play. Each agent has its own actor network (both have the same architecture) and they share critic network. Also both agents are adding and sampling from the same shared replay buffer.
+Deep Deterministic Policy Gradient ([DDPG](https://arxiv.org/pdf/1509.02971.pdf)) is adapted to work with two agents. Since each agent receives its own, local observation, the code from DRLND Project 2 (Continuous Control) was easily adapted to train both agents through self-play. Each agent has its own actor network (both have the same architecture) and they share critic network. Also both agents are adding and sampling from the same shared replay buffer. ([MADDPG]https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf)
 
 ### Model Architecture
 This is the architecture of the **Actor Networks** :
@@ -29,17 +29,16 @@ In the project file there are two Python files defining five classes.
 ### Hyperparameters
 Parameters that showed the best results are:
 - `BUFFER_SIZE` = 1e6 (1 milion), recommended in the ddpg paper
-- `BATCH_SIZE`  = 128 , bigger is better, it is limited by RAM memory of the maschine where you run the learning
+- `BATCH_SIZE`  = 128 , minibatch size
 - `GAMMA`       = 0.99 , discount factor
-- `TAU`         = 1e-3 , parameter for soft update of target parameters
-- `LR_ACTOR`    = 3e-4 , learning rate of the actor
+- `TAU`         = 2e-1 , parameter for soft update of target parameters
+- `LR_ACTOR`    = 1e-4 , learning rate of the actor
 - `LR_CRITIC`   = 3e-4 , learning rate of the critic
-- `UPDATE_EVERY`= 5, how often to update the network
 - `WEIGHT_DECAY` = 0 ,  L2 weight decay
 
 ### Result
 
-The Environment has been solved in 369 learning episodes where each of them lasted 1000 steps. The environment is considered solved when in the last 100 episodes average reward is 30. The graph of rewards during the learning period is shown in the image below:
+The Environment has been solved in 208 learning episodes where each of them lasted until done is returned from the environment. The environment is considered solved when in the last 100 episodes average reward is 0.5. The graph of rewards during the learning period is shown in the image below:
 
 <p align="center">
 <img src="https://github.com/brinij/p2_continuous-control/blob/master/p2_rewards.png" width="400">
