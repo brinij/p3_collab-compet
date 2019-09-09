@@ -6,7 +6,7 @@
 
 ### Learning Algorithm : DDPG
 
-Deep Deterministic Policy Gradient ([DDPG](https://arxiv.org/pdf/1509.02971.pdf)) is adapted to work with two agents. Since each agent receives its own, local observation, the code from DRLND Project 2 (Continuous Control) was easily adapted to train both agents through self-play. Each agent has its own actor network (both have the same architecture) and they share critic network. Also both agents are adding and sampling from the same shared replay buffer. ([MADDPG]https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf)
+Deep Deterministic Policy Gradient ([DDPG](https://arxiv.org/pdf/1509.02971.pdf)) is adapted to work with two agents. Since each agent receives its own, local observation, the code from DRLND Project 2 (Continuous Control) was easily adapted to train both agents through self-play. Each agent has its own actor network (both have the same architecture) and they share critic network. Also both agents are adding and sampling from the same shared replay buffer. ([MADDPG](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf))
 
 ### Model Architecture
 This is the architecture of the **Actor Networks** :
